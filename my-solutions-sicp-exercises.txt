@@ -1,0 +1,5 @@
+Exercise 1.3
+(define (sum-of-squares-of-two-largers a b c) 
+  (cond ((or (and (> a b) (> b c)) (and (> b a) (> a c))) (+ (square a) (square b)))
+	((or (and (> a c) (> c b)) (and (> c a) (> a b))) (+ (square a) (square c)))
+	((or (and (> b c) (> c a)) (and (> c b) (> b a))) (+ (square b) (square c)))))
